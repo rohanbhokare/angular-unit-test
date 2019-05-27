@@ -1,7 +1,8 @@
 import { compute } from './compute';
 
 describe('compute', () => {
-  it('check negative value return 0',() => {
-    compute(-1);
+  it('should return 0 if input is negative', () => {
+    const result = compute(-1);
+    expect(result).toBe(0);
   });
 });
